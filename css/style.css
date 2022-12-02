@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    overflow-x: unset;
+    overflow-y:unset ;
+   
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #575757;
+}
+
+.navbar{
+    background-color:#7bdff2;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    color:white ;
+    font-weight: bold;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.btn,
+a.btn:any-link {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border: 1px solid #555;
+    color: #555;
+    font-weight: 600;
+}
+
+.btn.btn-primary,
+a.btn.btn-primary {
+    background-color: #FFBE51;
+    border-color: #FFBE51;
+    color: #fff;
+}
+
+.align-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container-fluid {
+    width: 100%;
+    background-color:#7bdff2;
+    
+
+   
+}
+#navbarNav{
+    
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: row-reverse;
+    
+}
+
+.navbar-nav .nav-link.active{
+    color: white;
+    font-weight: bold;
+}
+.nav-link {
+    color: white;
+    font-weight: bold;
+}
+ 
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    border:none;
+    box-shadow: none;
+}
+
+
+button{
+    cursor:pointer;
+    border: none;
+    background-color:white;
+    color: white;
+} 
+ 
+
+
+
+/*header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a:any-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+}
+*/
+section.banner p {
+    width: 500px;
+    max-width: 100%;
+    font-size: 40px;
+}
+
+section.banner img {
+    max-width: 100%;
+}
+
+section.servicos {
+    background-color: #f7d6e0;
+}
+
+section.servicos .container {
+    flex-direction: column;
+    text-align: center;
+}
+
+section.servicos .items {
+    width: 110%;
+    display: flex;
+    justify-content: space-around;
+}
+
+section.servicos .items article {
+    width: 230px;
+    margin: 30px;
+}
+
+section.servicos .items article h3 {
+    text-transform: none;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+section.servicos .items article h4 {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    text-shadow: #575757;
+}
+
+.foto_baño{
+    
+        width:100%;
+        height: 200px;
+        border-radius: 50%;
+        
+    }
+
+section.servicos .items .thumb {
+    width: 112%;
+    height: 200px;
+    background-color: #fff;
+}
+
+section.sobre {
+    padding: 100px 0;
+}
+
+section.sobre .text {
+    padding: 50px;
+    width: 600px;
+    max-width: 100%;
+}
+
+section.sobre .text p {
+    font-weight: 300;
+}
+
+footer {
+    background-color:#7bdff2;
+    padding: 20px;
+    
+    
+}
+
+footer .info {
+    padding: 30px;
+    
+}
+
+footer .logo-icon img {
+    width: 200px;
+    
+    
+
+}
+
+footer a:any-link,
+footer p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer .mapa iframe {
+    width: 450px;
+    height: 200px;
+    max-width: 100%;
+}
+
+
+/* SOBRE */
+
+section.team .container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section.servicos-lista .container {
+    flex-direction: column;
+}
+
+section.servicos-lista h1 {
+    color: #FFBE51;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+section.servicos-lista article {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    padding: 50px;
+    width: 100%;
+    border-bottom: 1px solid #555;
+}
+
+section.servicos-lista article .thumb {
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    background-color: #555;
+    margin: 0 30px 30px;
+}
+
+section.servicos-lista article .info {
+    padding: 0 30px;
+    width: 800px;
+    max-width: 100%;
+}
+
+section.servicos-lista article .info h2 {
+    margin-top: 0;
+}
+
+/* contacto */
+
+section.contacto .container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section.contacto h1 {
+    color: #FFBE51;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+.contacto form input:not([type="radio"]):not([type="checkbox"]),
+.contacto form textarea,
+.contacto form select {
+    width: 100%;
+    padding: 5px;
+}
+
+.contacto form input:not([type="radio"]):not([type="checkbox"]):focus,
+.contacto form textarea:focus,
+.contacto form select:focus {
+    outline-color: #00796B;
+}
+
+.contacto form fieldset {
+    margin: 15px 0;
+    border-color: #fff;
+}
+
+.contacto form textarea {
+    resize: none;
+    height: 300px;
+}
+
+.contacto form label {
+    margin: 10px 0 5px;
+    display: inline-block;
+}
+
+.contacto .info {
+    padding: 15px 30px;
+}
+
+.contacto .info iframe {
+    max-width: 100%;
+    width: 700px;
+    height: 300px;
+}
+
+section.contacto a:any-link,
+section.contacto p {
+    color: #FFBE51;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Escritorio
+@media (min-width: 1199.98px)  {
+    body{background: red;}
+}
+Fin Escritorio*/
+
+/*Tablet*/
+/*Portrait*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    
+
+    
+    body{
+        background: red;
+        width: 100vw;
+        height: 100%;
+    
+    }
+    .container {
+        width: 90%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    
+}
+
+/*landscape*/
+@media (min0-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
+    body{background: blue;}
+}
+/*fin tablet*/
+
+/*movil*/
+/*Portrait*/
+/*Default*/
+@media (max-width: 575.98px)and (orientation:portrait) {
+
+    header nav ul li {
+        display: block;
+        align-content:space-around;
+    }
+    
+    header nav ul li a:any-link {
+        text-decoration: none;
+        font-weight:bold;
+        color: #fff;
+        display:flex;
+        padding: 10px;
+    }
+    
+    body{background: green;
+   
+      
+        
+    
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content:left;
+        align-items: center;
+        flex-direction: column;
+    }
+    .foto_baño{
+    
+        width:50vw;
+        height: 100%;
+        border-radius: 50%;
+    }
+    .section.servicos{
+        
+    }
+ }
+/*landscape*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+    body{background: black;}
+}
+/*fin movil*/
